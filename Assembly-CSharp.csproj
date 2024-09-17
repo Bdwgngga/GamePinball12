@@ -62,10 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Controller Penahan.cs" />
     <Compile Include="Assets\Script\Laucher.cs" />
+    <Compile Include="Assets\Script\Respawn.cs" />
     <Compile Include="Assets\Script\Switch.cs" />
     <Compile Include="Assets\Script\BumperController.cs" />
     <Compile Include="Assets\Script\menu.cs" />
-    <Compile Include="Assets\Script\ScoreScript.cs" />
+    <Compile Include="Assets\Script\Score.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\WorldMaterialsFree\Shaders\WorldMatHDRPFree.shader" />

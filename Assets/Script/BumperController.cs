@@ -7,14 +7,15 @@ public class BumperController : MonoBehaviour
     public Collider bola;
     public float speed;
     public Animator animator;
-    public ScoreScript Score;
+    public Score Score;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider == bola)
         {
             Rigidbody bolaRig = bola.GetComponent<Rigidbody>();
             bolaRig.velocity *= speed;
-            animator.SetBool("Hit", true);
+            animator.SetBool("Hit", true);
+            Score.tambahscore();
         }
         else
         {

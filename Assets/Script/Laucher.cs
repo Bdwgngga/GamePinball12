@@ -5,25 +5,32 @@ public class LauncherController : MonoBehaviour
 {
     public Collider bola;
     public KeyCode input;
-
+    private bool bolaInside = false;
     public float maxTimeHold;
     public float maxForce;
 
     private bool isHold = false;
 
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider == bola)
         {
-            ReadInput(bola);
+            bolaInside = true;
         }
     }
 
-    private void ReadInput(Collider collider)
+    private void OnCollisionExit(Collision collision)
     {
-        if (Input.GetKey(input) && !isHold)
+        if (collision.collider == bola)
         {
-            StartCoroutine(StartHold(collider));
+            bolaInside = false;
+        }
+    }
+    private void Update()
+    {
+        if (bolaInside && Input.GetKey(input) && !isHold)
+        {
+            StartCoroutine(StartHold(bola));
             Debug.Log("LAUNCHER DITEKAN");
         }
     }
