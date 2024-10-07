@@ -61,12 +61,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Controller Penahan.cs" />
+    <Compile Include="Assets\Script\SFXAudioController.cs" />
     <Compile Include="Assets\Script\Laucher.cs" />
+    <Compile Include="Assets\Script\ScoreUIController.cs" />
     <Compile Include="Assets\Script\Respawn.cs" />
-    <Compile Include="Assets\Script\Switch.cs" />
+    <Compile Include="Assets\Script\ScoreManager.cs" />
+    <Compile Include="Assets\Script\TriggerRampController.cs" />
+    <Compile Include="Assets\Script\SwitchController.cs" />
     <Compile Include="Assets\Script\BumperController.cs" />
+    <Compile Include="Assets\Script\AudioManager.cs" />
     <Compile Include="Assets\Script\menu.cs" />
-    <Compile Include="Assets\Script\Score.cs" />
+    <Compile Include="Assets\Script\VFXManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\WorldMaterialsFree\Shaders\WorldMatHDRPFree.shader" />
