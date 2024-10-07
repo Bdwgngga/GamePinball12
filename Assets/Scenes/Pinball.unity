@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 338082718}
   - component: {fileID: 836053245}
+  - component: {fileID: 836053247}
   - component: {fileID: 836053244}
   - component: {fileID: 836053242}
   - component: {fileID: 836053246}
@@ -153,9 +154,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 162862263}
+  - component: {fileID: 162862267}
   - component: {fileID: 162862266}
   - component: {fileID: 162862265}
-  - component: {fileID: 162862267}
   - component: {fileID: 162862264}
   m_Layer: 0
   m_Name: ScoreDetector
@@ -194,9 +195,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -273,7 +274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 184642516}
-  - component: {fileID: 184642515}
+  - component: {fileID: 184642517}
   m_Layer: 0
   m_Name: SFX Audio Off
   m_TagString: Untagged
@@ -281,20 +282,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &184642515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184642514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10cfbd3df537a74780da21b97f686c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bgmAudioSource: {fileID: 0}
-  sfxAudioSource: {fileID: 847226848642771613, guid: 5b37ce583eb903f49bf2930e44c562fa, type: 3}
 --- !u!4 &184642516
 Transform:
   m_ObjectHideFlags: 0
@@ -310,6 +297,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2054535609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &184642517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184642514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10cfbd3df537a74780da21b97f686c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmAudioSource: {fileID: 0}
+  sfxAudioSource: {fileID: 847226848642771613, guid: 5b37ce583eb903f49bf2930e44c562fa, type: 3}
 --- !u!1 &198819054
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +425,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 232296340}
-  - component: {fileID: 232296339}
+  - component: {fileID: 232296341}
   m_Layer: 0
   m_Name: Switch VFX
   m_TagString: Untagged
@@ -432,19 +433,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &232296339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 232296338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cf9783517c0c134686be57073a99d6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxAudioSource: {fileID: 232296338}
 --- !u!4 &232296340
 Transform:
   m_ObjectHideFlags: 0
@@ -460,6 +448,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2054535609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232296341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232296338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a302e869448035419a291ed30d1e6c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vfxAudioSource: {fileID: 232296338}
 --- !u!1 &315640509
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,9 +590,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333255734}
+  - component: {fileID: 333255739}
   - component: {fileID: 333255738}
   - component: {fileID: 333255737}
-  - component: {fileID: 333255739}
   - component: {fileID: 333255735}
   m_Layer: 0
   m_Name: Switch (28)
@@ -699,12 +700,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
   onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
   scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
   score: 5
 --- !u!4 &338082718
 Transform:
@@ -730,9 +731,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 347257603}
+  - component: {fileID: 347257608}
   - component: {fileID: 347257607}
   - component: {fileID: 347257606}
-  - component: {fileID: 347257608}
   - component: {fileID: 347257604}
   m_Layer: 0
   m_Name: Switch (29)
@@ -840,12 +841,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
   onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
   scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
   score: 5
 --- !u!1 &353238598
 GameObject:
@@ -990,9 +991,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 370644486}
+  - component: {fileID: 370644491}
   - component: {fileID: 370644490}
   - component: {fileID: 370644489}
-  - component: {fileID: 370644488}
   - component: {fileID: 370644487}
   m_Layer: 0
   m_Name: Switch (30)
@@ -1037,26 +1038,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4.1531835, z: 1}
   m_Center: {x: 0, y: 1.5765917, z: 0}
---- !u!114 &370644488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370644485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
-  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
-  scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
-  score: 5
 --- !u!23 &370644489
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1107,6 +1088,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370644485}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &370644491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370644485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
+  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
+  scoreManager: {fileID: 1138451598}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
+  score: 5
 --- !u!1001 &452843180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1556,9 +1557,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 601548314}
+  - component: {fileID: 601548319}
   - component: {fileID: 601548318}
   - component: {fileID: 601548317}
-  - component: {fileID: 601548316}
   - component: {fileID: 601548315}
   m_Layer: 0
   m_Name: Switch (35)
@@ -1603,26 +1604,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4.1531835, z: 1}
   m_Center: {x: 0, y: 1.5765917, z: 0}
---- !u!114 &601548316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601548313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
-  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
-  scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
-  score: 5
 --- !u!23 &601548317
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1673,6 +1654,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601548313}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &601548319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601548313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
+  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
+  scoreManager: {fileID: 1138451598}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
+  score: 5
 --- !u!1 &607326296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,7 +2135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 783074153}
-  - component: {fileID: 783074152}
+  - component: {fileID: 783074154}
   m_Layer: 0
   m_Name: AudioManagement
   m_TagString: Untagged
@@ -2142,20 +2143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &783074152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783074151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10cfbd3df537a74780da21b97f686c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bgmAudioSource: {fileID: 0}
-  sfxAudioSource: {fileID: 3715963500520668905, guid: 65ebe967824762b4fa3131acf5dcb49d, type: 3}
 --- !u!4 &783074153
 Transform:
   m_ObjectHideFlags: 0
@@ -2171,6 +2158,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2054535609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &783074154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783074151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10cfbd3df537a74780da21b97f686c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmAudioSource: {fileID: 0}
+  sfxAudioSource: {fileID: 3715963500520668905, guid: 65ebe967824762b4fa3131acf5dcb49d, type: 3}
 --- !u!1 &785825425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,9 +2181,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 785825426}
+  - component: {fileID: 785825431}
   - component: {fileID: 785825430}
   - component: {fileID: 785825429}
-  - component: {fileID: 785825428}
   - component: {fileID: 785825427}
   m_Layer: 0
   m_Name: Switch (36)
@@ -2227,26 +2228,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4.1531835, z: 1}
   m_Center: {x: 0, y: 1.5765917, z: 0}
---- !u!114 &785825428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 785825425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
-  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
-  scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
-  score: 5
 --- !u!23 &785825429
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2297,6 +2278,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785825425}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &785825431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785825425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
+  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
+  scoreManager: {fileID: 1138451598}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
+  score: 5
 --- !u!95 &836053241
 Animator:
   serializedVersion: 5
@@ -2403,12 +2404,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &836053247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153166695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9f87b23fd8dc04eaab10964d0dca92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   bola: {fileID: 1886658364}
   multiplier: 1.5
   color: {r: 0, g: 0, b: 0, a: 0}
   score: 10
-  audioManager: {fileID: 783074152}
-  vfxManager: {fileID: 232296339}
+  audioManager: {fileID: 783074154}
+  vfxManager: {fileID: 232296341}
   scoreManager: {fileID: 1138451598}
 --- !u!1 &854104717
 GameObject:
@@ -3514,9 +3527,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 973259224}
+  - component: {fileID: 973259229}
   - component: {fileID: 973259228}
   - component: {fileID: 973259227}
-  - component: {fileID: 973259226}
   - component: {fileID: 973259225}
   m_Layer: 0
   m_Name: Switch (32)
@@ -3561,26 +3574,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4.1531835, z: 1}
   m_Center: {x: 0, y: 1.5765917, z: 0}
---- !u!114 &973259226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973259223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
-  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
-  scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
-  score: 5
 --- !u!23 &973259227
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3631,6 +3624,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973259223}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &973259229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973259223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
+  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
+  scoreManager: {fileID: 1138451598}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
+  score: 5
 --- !u!1 &984474666
 GameObject:
   m_ObjectHideFlags: 0
@@ -4197,7 +4210,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1138451595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e6c2ad527a0592459a6c30ce6cb9fbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 2543aff5fe4b8424b8c50decc6e6370b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
@@ -4211,6 +4224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1155096216}
   - component: {fileID: 1155096221}
+  - component: {fileID: 1155096224}
   - component: {fileID: 1155096220}
   - component: {fileID: 1155096222}
   - component: {fileID: 1155096218}
@@ -4344,13 +4358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  multiplier: 1.5
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 10
-  audioManager: {fileID: 783074152}
-  vfxManager: {fileID: 232296339}
-  scoreManager: {fileID: 1138451598}
 --- !u!114 &1155096223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4363,13 +4370,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 0}
-  multiplier: 0
+--- !u!114 &1155096224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155096215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9f87b23fd8dc04eaab10964d0dca92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  multiplier: 1.5
   color: {r: 0, g: 0, b: 0, a: 0}
-  score: 0
-  audioManager: {fileID: 0}
-  vfxManager: {fileID: 0}
-  scoreManager: {fileID: 0}
+  score: 10
+  audioManager: {fileID: 783074154}
+  vfxManager: {fileID: 232296341}
+  scoreManager: {fileID: 1138451598}
 --- !u!1 &1171457780
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,6 +4399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1171457781}
   - component: {fileID: 1171457787}
+  - component: {fileID: 1171457788}
   - component: {fileID: 1171457786}
   - component: {fileID: 1171457785}
   - component: {fileID: 1171457784}
@@ -4440,13 +4460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 0}
-  multiplier: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 0
-  audioManager: {fileID: 0}
-  vfxManager: {fileID: 0}
-  scoreManager: {fileID: 0}
 --- !u!136 &1171457784
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4482,13 +4495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  multiplier: 1.5
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 10
-  audioManager: {fileID: 783074152}
-  vfxManager: {fileID: 232296339}
-  scoreManager: {fileID: 1138451598}
 --- !u!23 &1171457786
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4539,6 +4545,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171457780}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1171457788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171457780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9f87b23fd8dc04eaab10964d0dca92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  multiplier: 1.5
+  color: {r: 0, g: 0, b: 0, a: 0}
+  score: 10
+  audioManager: {fileID: 783074154}
+  vfxManager: {fileID: 232296341}
+  scoreManager: {fileID: 1138451598}
 --- !u!1 &1186529080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4549,6 +4574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186529081}
   - component: {fileID: 1186529086}
+  - component: {fileID: 1186529089}
   - component: {fileID: 1186529085}
   - component: {fileID: 1186529087}
   - component: {fileID: 1186529083}
@@ -4682,13 +4708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  multiplier: 1.5
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 10
-  audioManager: {fileID: 783074152}
-  vfxManager: {fileID: 232296339}
-  scoreManager: {fileID: 1138451598}
 --- !u!114 &1186529088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4701,13 +4720,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 0}
-  multiplier: 0
+--- !u!114 &1186529089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186529080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9f87b23fd8dc04eaab10964d0dca92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  multiplier: 1.5
   color: {r: 0, g: 0, b: 0, a: 0}
-  score: 0
-  audioManager: {fileID: 0}
-  vfxManager: {fileID: 0}
-  scoreManager: {fileID: 0}
+  score: 10
+  audioManager: {fileID: 783074154}
+  vfxManager: {fileID: 232296341}
+  scoreManager: {fileID: 1138451598}
 --- !u!1 &1195208208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5330,7 +5361,7 @@ GameObject:
   - component: {fileID: 1304032598}
   - component: {fileID: 1304032601}
   - component: {fileID: 1304032600}
-  - component: {fileID: 1304032599}
+  - component: {fileID: 1304032602}
   m_Layer: 5
   m_Name: Score (1)
   m_TagString: Untagged
@@ -5357,20 +5388,6 @@ RectTransform:
   m_AnchoredPosition: {x: -228.6, y: 249.46313}
   m_SizeDelta: {x: 283.08, y: 51.0737}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1304032599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1304032597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eaf13d1bba2fd641a4d0073582ad51a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 1304032600}
-  scoreManager: {fileID: 1138451598}
 --- !u!114 &1304032600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5470,6 +5487,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304032597}
   m_CullTransparentMesh: 1
+--- !u!114 &1304032602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304032597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4388ace45eb7444b43f3ba423cd8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1304032600}
+  scoreManager: {fileID: 1138451598}
 --- !u!1 &1311322632
 GameObject:
   m_ObjectHideFlags: 0
@@ -5479,9 +5510,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1311322633}
+  - component: {fileID: 1311322638}
   - component: {fileID: 1311322637}
   - component: {fileID: 1311322636}
-  - component: {fileID: 1311322635}
   - component: {fileID: 1311322634}
   m_Layer: 0
   m_Name: Switch (34)
@@ -5526,26 +5557,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4.1531835, z: 1}
   m_Center: {x: 0, y: 1.5765917, z: 0}
---- !u!114 &1311322635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311322632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
-  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
-  scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
-  score: 5
 --- !u!23 &1311322636
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5596,6 +5607,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311322632}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1311322638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311322632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
+  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
+  scoreManager: {fileID: 1138451598}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
+  score: 5
 --- !u!1 &1336070732
 GameObject:
   m_ObjectHideFlags: 0
@@ -5773,9 +5804,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1435515934}
+  - component: {fileID: 1435515939}
   - component: {fileID: 1435515938}
   - component: {fileID: 1435515937}
-  - component: {fileID: 1435515936}
   - component: {fileID: 1435515935}
   m_Layer: 0
   m_Name: Switch (33)
@@ -5820,26 +5851,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4.1531835, z: 1}
   m_Center: {x: 0, y: 1.5765917, z: 0}
---- !u!114 &1435515936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435515933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
-  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
-  scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
-  score: 5
 --- !u!23 &1435515937
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5890,6 +5901,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435515933}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1435515939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435515933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
+  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
+  scoreManager: {fileID: 1138451598}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
+  score: 5
 --- !u!1 &1458493198
 GameObject:
   m_ObjectHideFlags: 0
@@ -5899,9 +5930,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2145343232}
+  - component: {fileID: 2145343237}
   - component: {fileID: 2145343236}
   - component: {fileID: 2145343235}
-  - component: {fileID: 2145343237}
   - component: {fileID: 2145343233}
   m_Layer: 0
   m_Name: Switch (27)
@@ -5919,7 +5950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1461175672}
-  - component: {fileID: 1461175671}
+  - component: {fileID: 1461175673}
   m_Layer: 0
   m_Name: SFX Audio On
   m_TagString: Untagged
@@ -5927,20 +5958,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1461175671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461175670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f10cfbd3df537a74780da21b97f686c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bgmAudioSource: {fileID: 0}
-  sfxAudioSource: {fileID: 3347824257178343580, guid: d69e3960950b63549a79a836648d5e75, type: 3}
 --- !u!4 &1461175672
 Transform:
   m_ObjectHideFlags: 0
@@ -5956,6 +5973,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2054535609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1461175673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461175670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10cfbd3df537a74780da21b97f686c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmAudioSource: {fileID: 0}
+  sfxAudioSource: {fileID: 3347824257178343580, guid: d69e3960950b63549a79a836648d5e75, type: 3}
 --- !u!1 &1487615992
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,6 +6061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1588171842}
   - component: {fileID: 1588171848}
+  - component: {fileID: 1588171849}
   - component: {fileID: 1588171847}
   - component: {fileID: 1588171846}
   - component: {fileID: 1588171845}
@@ -6090,13 +6122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 0}
-  multiplier: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 0
-  audioManager: {fileID: 0}
-  vfxManager: {fileID: 0}
-  scoreManager: {fileID: 0}
 --- !u!136 &1588171845
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6132,13 +6157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  multiplier: 1.5
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 10
-  audioManager: {fileID: 783074152}
-  vfxManager: {fileID: 232296339}
-  scoreManager: {fileID: 1138451598}
 --- !u!23 &1588171847
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6189,6 +6207,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588171841}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1588171849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588171841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9f87b23fd8dc04eaab10964d0dca92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  multiplier: 1.5
+  color: {r: 0, g: 0, b: 0, a: 0}
+  score: 10
+  audioManager: {fileID: 783074154}
+  vfxManager: {fileID: 232296341}
+  scoreManager: {fileID: 1138451598}
 --- !u!1 &1601326726
 GameObject:
   m_ObjectHideFlags: 0
@@ -6544,9 +6581,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1653165668}
+  - component: {fileID: 1653165673}
   - component: {fileID: 1653165672}
   - component: {fileID: 1653165671}
-  - component: {fileID: 1653165670}
   - component: {fileID: 1653165669}
   m_Layer: 0
   m_Name: Switch (31)
@@ -6591,26 +6628,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 4.1531835, z: 1}
   m_Center: {x: 0, y: 1.5765917, z: 0}
---- !u!114 &1653165670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653165667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
-  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
-  scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
-  score: 5
 --- !u!23 &1653165671
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6661,6 +6678,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653165667}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1653165673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653165667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f653c92e70b4fa0428b87dc9ea77bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
+  onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
+  scoreManager: {fileID: 1138451598}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
+  score: 5
 --- !u!1 &1682102727
 GameObject:
   m_ObjectHideFlags: 0
@@ -7162,8 +7199,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3.145884, z: 1}
+  m_Center: {x: 0, y: 1.072942, z: 0}
 --- !u!23 &1788039213
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8216,6 +8253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2016504191}
   - component: {fileID: 2016504197}
+  - component: {fileID: 2016504198}
   - component: {fileID: 2016504196}
   - component: {fileID: 2016504195}
   - component: {fileID: 2016504194}
@@ -8276,13 +8314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 0}
-  multiplier: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 0
-  audioManager: {fileID: 0}
-  vfxManager: {fileID: 0}
-  scoreManager: {fileID: 0}
 --- !u!136 &2016504194
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8318,13 +8349,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97013acce1773c140969e7fa2dadb86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bola: {fileID: 1886658364}
-  multiplier: 1.5
-  color: {r: 0, g: 0, b: 0, a: 0}
-  score: 10
-  audioManager: {fileID: 783074152}
-  vfxManager: {fileID: 232296339}
-  scoreManager: {fileID: 1138451598}
 --- !u!23 &2016504196
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8375,6 +8399,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016504190}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2016504198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016504190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9f87b23fd8dc04eaab10964d0dca92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bola: {fileID: 1886658364}
+  multiplier: 1.5
+  color: {r: 0, g: 0, b: 0, a: 0}
+  score: 10
+  audioManager: {fileID: 783074154}
+  vfxManager: {fileID: 232296341}
+  scoreManager: {fileID: 1138451598}
 --- !u!1 &2037872679
 GameObject:
   m_ObjectHideFlags: 0
@@ -8891,12 +8934,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bola: {fileID: 1886658364}
-  offMaterial: {fileID: 2100000, guid: be97ee49110ddf842991d4348360ff4b, type: 2}
+  offMaterial: {fileID: 2100000, guid: 227eac046308f4a4b927517cf1a88f24, type: 2}
   onMaterial: {fileID: 2100000, guid: b525527a656964140a2aa75a4a2a7129, type: 2}
   scoreManager: {fileID: 1138451598}
-  audioOn: {fileID: 1461175671}
-  audioOff: {fileID: 184642515}
-  vfxManager: {fileID: 232296339}
+  audioOn: {fileID: 1461175673}
+  audioOff: {fileID: 184642517}
+  vfxManager: {fileID: 232296341}
   score: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
